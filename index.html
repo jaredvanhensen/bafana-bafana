@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bafana-Bafana! Walking Tours | Cape Town Local Guide</title>
+  <style>
+    :root {
+      --sun: #ffb703;
+      --ocean: #219ebc;
+      --mountain: #023047;
+      --sand: #fefae0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--sand);
+      color: var(--mountain);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/hero.jpg") center/cover no-repeat;
+      color: white;
+      padding: 5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 4rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--ocean);
+      font-size: 2.2rem;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .highlights img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .pricing {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .price-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .price {
+      font-size: 2.5rem;
+      color: var(--sun);
+    }
+
+    form {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 16px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.4rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      background: var(--ocean);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    button:hover {
+      background: var(--mountain);
+    }
+
+    footer {
+      background: var(--mountain);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bafana-Bafana! Walking Tours</h1>
+  <p>Explore Cape Town with a true local – stories, culture, history, fun vibes and stunning photos included ☀️📸</p>
+</header>
+
+<section>
+  <h2>Meet Your Guide</h2>
+  <div class="about">
+    <img src="images/bafana.jpg" alt="Bathandwa Matiwane" />
+    <div>
+      <p><strong>Bathandwa Matiwane</strong> – born and raised in the suburbs of Cape Town, young, energetic and deeply connected to the city.</p>
+      <p>From colourful Bo-Kaap streets to township life, Parliament, Long Street and the V&A Waterfront – I’ll show you Cape Town through local eyes.</p>
+      <p>Bonus: I’m also your <strong>personal photographer</strong>. No rushed selfies – just relaxed, fun photoshoots with patience and good vibes.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Cape Town Highlights</h2>
+  <div class="highlights">
+    <img src="images/bo-kaap.jpg" alt="Bo-Kaap" />
+    <img src="images/waterfront.jpg" alt="V&A Waterfront" />
+    <img src="images/long-street.jpg" alt="Long Street" />
+    <img src="images/parliament.jpg" alt="Parliament" />
+  </div>
+</section>
+
+<section>
+  <h2>Watch & Feel the Vibe</h2>
+  <div class="videos">
+    <div>
+      <h3>Introduction</h3>
+      <video controls src="videos/Introduction.mp4"></video>
+    </div>
+    <div>
+      <h3>Fun with Bafana</h3>
+      <video controls src="videos/CarBafana.mp4"></video>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Tour Options</h2>
+  <div class="pricing">
+    <div class="price-card">
+      <h3>1 Hour Walking Tour</h3>
+      <p class="price">R200</p>
+      <p>Perfect for a quick city highlight experience.</p>
+    </div>
+    <div class="price-card">
+      <h3>2 Hour Walking Tour</h3>
+      <p class="price">R300</p>
+      <p>Deeper stories, more places, more photos.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Walking Routes & Meeting Points</h2>
+  <p style="text-align:center;max-width:800px;margin:0 auto 2rem;">All tours are relaxed walking routes with plenty of photo stops, stories and local insights. Exact routes can be adjusted to your pace and interests.</p>
+  <div class="highlights">
+    <iframe src="https://www.google.com/maps?q=Bo-Kaap,Cape+Town&output=embed" style="border:0;width:100%;height:250px;border-radius:12px;" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps?q=Bo-Kaap,Cape+Town&output=embed" style="border:0;width:100%;height:250px;border-radius:12px;" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps?q=Bo-Kaap,Cape+Town&output=embed" style="border:0;width:100%;height:250px;border-radius:12px;" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps?q=Bo-Kaap,Cape+Town&output=embed" style="border:0;width:100%;height:250px;border-radius:12px;" loading="lazy"></iframe>
+  </div>
+</section>
+
+<section>
+  <h2>Why Choose a Local Guide?</h2>
+  <div class="about">
+    <div>
+      <p>Anyone can show you landmarks. A local shows you the <strong>stories behind them</strong>.</p>
+      <ul>
+        <li>Born & raised in Cape Town</li>
+        <li>Honest insight into township life & culture</li>
+        <li>Relaxed pace – no rushing</li>
+        <li>Personal photographer included 📸</li>
+        <li>Perfect for solo travellers, couples & small groups</li>
+      </ul>
+    </div>
+    <img src="images/local-life.jpg" alt="Local Cape Town life" />
+  </div>
+</section>
+
+<section>
+  <h2>Happy Guests</h2>
+  <div class="pricing">
+    <div class="price-card">
+      <p>★★★★★</p>
+      <p>"Best experience in Cape Town. Felt like walking with a friend, not a guide."</p>
+      <strong>– Anna, Germany</strong>
+    </div>
+    <div class="price-card">
+      <p>★★★★★</p>
+      <p>"Amazing photos, amazing stories. Highly recommended!"</p>
+      <strong>– James, UK</strong>
+    </div>
+    <div class="price-card">
+      <p>★★★★★</p>
+      <p>"We saw places we would never find on our own."</p>
+      <strong>– Sofia, Spain</strong>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Payment Options</h2>
+  <p style="text-align:center;max-width:700px;margin:auto;">Payment is simple and flexible. You can pay <strong>cash (ZAR)</strong> on the day, or arrange <strong>PayPal / card payment</strong> after booking confirmation.</p>
+</section>
+
+<section>
+  <h2>Book Your Tour</h2>
+  <form onsubmit="alert('Thank you! Your booking request has been sent. I will contact you shortly.');return false;">
+    <label>First Name</label>
+    <input type="text" required />
+
+    <label>Surname</label>
+    <input type="text" required />
+
+    <label>Email</label>
+    <input type="email" required />
+
+    <label>Telephone</label>
+    <input type="tel" required />
+
+    <label>Tour Duration</label>
+    <select>
+      <option>1 Hour – R200</option>
+      <option>2 Hours – R300</option>
+    </select>
+
+    <label>Preferred Time Slot</label>
+    <select>
+      <option>08:00</option><option>09:00</option><option>10:00</option><option>11:00</option>
+      <option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option>
+      <option>16:00</option><option>17:00</option><option>18:00</option><option>19:00</option>
+      <option>20:00</option><option>21:00</option>
+    </select>
+
+    <button type="submit">Request Booking</button>
+  </form>
+</section>
+
+<section style="text-align:center;padding-bottom:2rem;">
+  <a href="https://wa.me/27762795206" target="_blank" style="display:inline-block;background:#25D366;color:white;padding:1rem 2rem;border-radius:50px;text-decoration:none;font-size:1.2rem;box-shadow:0 10px 20px rgba(0,0,0,0.2);">💬 Book via WhatsApp</a>
+</section>
+
+<footer>
+  <p>© 2026 Bathandwa Matiwane – Cape Town Walking Tours ☀️ | Book via WhatsApp</p>
+</footer>
+
+</body>
+</html>
